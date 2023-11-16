@@ -1,0 +1,49 @@
+{
+  // Lint
+  // ESLint - Typescript
+  // StyleLint - CSS
+  // Prettier - rest
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.options": {
+    "extensions": [".md", ".mdx", ".ts", ".tsx"]
+  },
+  // TODO: Enable mdx validation
+  //"eslint.validate": ["markdown", "mdx", "typescript", "typescriptreact"],
+  "eslint.validate": ["markdown", "typescript", "typescriptreact"],
+
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+
+  // CSS validation by Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // Use correct TypeScript version
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.importModuleSpecifier": "project-relative",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "hide-files.files": []
+}
